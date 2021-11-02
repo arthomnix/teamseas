@@ -39,14 +39,22 @@ ax.locator_params(axis='y', nbins=20)
 # set labels and graph title
 ax.set(xlabel="Time (UTC)", ylabel="Total donations (USD)", title="Team Seas Donations")
 # set colours (solarized dark pog)
+# colour of title
 ax.title.set_color("#268BD2")
+# colour of axis labels
 ax.xaxis.label.set_color("#859900")
 ax.yaxis.label.set_color("#859900")
+# colour of spines (graph borders)
 for spine in ax.spines.values(): spine.set_edgecolor("#586E75")
+# colour of tick labels
+# also rotate the time by 90 degrees
 ax.tick_params(axis='x', labelrotation=90, colors="#268BD2")
 ax.tick_params(axis='y', colors="#268BD2")
+# background colour of just the graph
 ax.set_facecolor(color="#002B36")
+# background colour of the whole image
 fig.set_facecolor(color="#073642")
+# colour of grid lines
 ax.grid(color="#586E75")
 # add padding on the bottom so the timestamps don't get cut off
 fig.subplots_adjust(bottom=0.2)
