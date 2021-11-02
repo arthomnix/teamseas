@@ -1,6 +1,5 @@
 # Team Seas scraper / data logger
 import requests
-import math
 import csv
 import time
 import datetime
